@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruit CRM Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="top-nav">
+            <div class="logo">
+                <img src="logo.png" alt="CRM Logo">
+            </div>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    
+                        <li class="dropdown">
+                            <a href="#">Productv</a>
+                            <div class="dropdown-product">
+                                <!-- Left Column: About Product -->
+                                <div class="product-column about">
+                                    <h3>About Recruit CRM</h3>
+                                    <p>Recruit CRM is an easy-to-use, AI-powered recruitment software empowering recruitment agencies across 100+ countries.</p>
+                                </div>
+                                
+                                <!-- Middle Column: Overview -->
+                                <div class="product-column overview">
+                                    <h3>Overview</h3>
+                                    <ul>
+                                        <li>ATS</li>
+                                        <li>CRM</li>
+                                        <li>API</li>
+                                        <li>Integrations</li>
+                                        <li>Workflow Automation</li>
+                                        <li>Advanced Analytics</li>
+                                        <li>Job Multiposting</li>
+                                        <li>AI features & GPT integration</li>
+                                    </ul>
+                                </div>
+                                
+                                <!-- Right Column: Call to Action -->
+                                <div class="product-column cta">
+                                    <h3>Start your journey</h3>
+                                    <p>Schedule a call to get personalized insights into how Recruit CRM can transform your recruitment process.</p>
+                                    <a href="#" class="btn">I want a demo</a>
+                                    <p>Experience Recruit CRM firsthand for an unlimited time period.</p>
+                                    <a href="#" class="btn">Sign up now</a>
+                                </div>
+                            </div>
+                        </li>
+                
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li class="dropdown">
+                        <a href="#">Resourcesv</a>
+                        <div class="dropdown-menu">
+                            <div class="column">
+                                <h3>Ebook</h3>
+                                <p>Future-proofing your recruitment with AI: Strategies to improve hiring, boost efficiency, and lead the market.</p>
+                                <button class="btn">ACCESS NOW</button>
+                            </div>
+                            <div class="column">
+                                <h3>Resources</h3>
+                                <ul>
+                                    <li><a href="#">Blogs</a></li>
+                                    <li><a href="#">Recruit CRM exclusives</a></li>
+                                    <li><a href="#">Recruitment webinars</a></li>
+                                    <li><a href="#">Podcasts</a></li>
+                                    <li><a href="#">Case studies</a></li>
+                                    <li><a href="#">Videos</a></li>
+                                    <li><a href="#">Testimonials</a></li>
+                                    <li><a href="#">Glossary</a></li>
+                                    <li><a href="#">Job description</a></li>
+                                    <li><a href="#">Help center</a></li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <h3>Recruiter's tool box</h3>
+                                <p>40+ FREE recruiting email templates to win over candidates.</p>
+                                <a href="#" class="read-more">Read more »</a>
+                                <p>How can recruiters create custom GPTs? [+ useful plugins & extensions]</p>
+                                <a href="#" class="read-more">Read more »</a>
+                                <p>8 free candidate experience survey templates that'll give you solid insights.</p>
+                                <a href="#" class="read-more">Read more »</a>
+                            </div>
+                            <div class="column">
+                                <h3>Hot on the block</h3>
+                                <div class="highlight-box blue">
+                                    <p>How can you streamline your hiring process?</p>
+                                    <a href="#" class="btn-read">Read more</a>
+                                </div>
+                                <div class="highlight-box yellow">
+                                    <p>250+ agencies have already switched to Recruit CRM—But why?</p>
+                                    <a href="#" class="btn-read">Read more</a>
+                                </div>
+                                <div class="highlight-box blue">
+                                    <p>What is an applicant tracking system? [The ultimate guide]</p>
+                                    <a href="#" class="btn-read">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button class="btn-signin">Sign in</button>
+                <button class="btn-try">Try for free</button>
+            </div>
+            <div class="language-dropdown">
+                <span class="lang-select">English v</span>
+                <ul class="dropdown-menu">
+                    <li>English</li>
+                    <li>French</li>
+                    <li>Spanish</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Live Webinar Banner -->
+        <div class="webinar-banner">
+            <div class="countdown">
+                <div class="countdown-item">
+                    <span id="days">17</span>
+                    <span class="label">DAYS</span>
+                </div>
+                <span class="separator">:</span>
+                <div class="countdown-item">
+                    <span id="hours">10</span>
+                    <span class="label">HRS</span>
+                </div>
+                <span class="separator">:</span>
+                <div class="countdown-item">
+                    <span id="minutes">10</span>
+                    <span class="label">MINS</span>
+                </div>
+                <span class="separator">:</span>
+                <div class="countdown-item">
+                    <span id="seconds">50</span>
+                    <span class="label">SECS</span>
+                </div>
+            </div>
+            <p class="webinar-text">
+                Live webinar – Maximize 2025 hiring success: Emerging trends & actionable strategies with Melissa Grabiner
+            </p>
+            <button class="btn-save">SAVE MY SEAT</button>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <section class="hero-section">
+        <div class="hero-text">
+            <h1>All Features</h1>
+            <p>Soup to nuts, Recruit CRM is a win for your business!</p>
+        </div>
+        <div class="hero-image">
+            <img src="character.png" alt="Mascot">
+        </div>
+    </section>
+
+    <!-- Fixed Button -->
+    <!-- <div class="fixed-btn">
+        <button>I want a demo</button>
+    </div> -->
+    <!--Popular Features to make salary a chalk work-->
+    <div class="popular-features">
+        <div class="popular-features-container">
+            <h2>Popular features to make hiring a cakewalk</h2>
+            <div class="feature-section">
+                <img src="feature-image1.png" alt="Chrome Extension">
+                <div class="feature-text">
+                    <h3>Chrome Extension</h3>
+                    <p>Source candidates with Recruit CRM's Chrome extension from LinkedIn, Xing, and more.</p>
+                </div>
+            </div>
+            <div class="feature-section">
+                <img src="feature-image2.png" alt="Integrations">
+                <div class="feature-text">
+                    <h3>Integrations</h3>
+                    <p>Leverage no-code automation to streamline and automate recruitment workflows.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!--Other Features Section-->
+    <div class="featues">
+    <div class="features-container">
+        <h2>Other Features</h2>
+        <div class="feature-item">
+            <span class="feature-icon">📌</span>
+            <div class="feature-content">
+                <h3>Kanban Boards</h3>
+                <p>Visualize your recruitment workflow with Recruit CRM's Kanban view to track candidates, manage tasks, and monitor progress.</p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <span class="feature-icon">📢</span>
+            <div class="feature-content">
+                <h3>Premium Job Boards Posting</h3>
+                <p>Promote your jobs on 2000+ premium job boards to reach the right talent.</p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <span class="feature-icon">🔍</span>
+            <div class="feature-content">
+                <h3>Advanced Search Filters</h3>
+                <p>Find the perfect candidates using Recruit CRM's advanced search and Boolean search techniques.</p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <span class="feature-icon">📞</span>
+            <div class="feature-content">
+                <h3>Call & Call Records</h3>
+                <p>Track phone calls and keep your team informed to enhance communication.</p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <span class="feature-icon">📂</span>
+            <div class="feature-content">
+                <h3>Notes, Tasks, Calendars, and Files</h3>
+                <p>Stay updated with tasks, notes, and files for candidate management.</p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <span class="feature-icon">📜</span>
+            <div class="feature-content">
+                <h3>Candidate History</h3>
+                <p>See the complete candidate life cycle for better decision-making.</p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <span class="feature-icon">🔗</span>
+            <div class="feature-content">
+                <h3>Associations</h3>
+                <p>Link any note, call log, or meeting to multiple records.</p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <span class="feature-icon">📊</span>
+            <div class="feature-content">
+                <h3>Deals Pipeline</h3>
+                <p>Track revenue and manage deals in your recruitment pipeline.</p>
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+    
+    <!-- Video Section -->
+
+    <section class="video-section">
+        
+            <div class="Video-section-header">
+                <h2>what our customers love the most about us!</h2>
+            </div>
+            <div class="video-container">
+                <iframe 
+                    width="100%" 
+                    height="500px" 
+                    src="https://www.youtube.com/embed/jN4Y2D_7mGI" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        
+    </section>
+
+    <!--Demo Section-->
+    <div class="demo-section">
+        <div class="demo-container">
+            <div class="demo-text">
+                <h2>See our ATS + CRM in action</h2>
+                <p>You’re just a click away from witnessing mind-blowing #RecTech</p>
+                <a href="#" class="demo-btn">I want a demo</a>
+            </div>
+            <div class="demo-image">
+                <img src="demo-image.png" alt="Demo Preview">
+            </div>
+        </div>
+        <hr>
+    </div>
+    
+    <a href="#" class="floating-demo-btn">I want a demo</a>
+    
+
+    <!--Footer Section-->
+    <footer class="footer">
+       
+        <div class="footer-column">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="#">Press Kit</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-column">
+            <h3>Products</h3>
+            <ul>
+                <li><a href="#">Recruiting Software</a></li>
+                <li><a href="#">Recruit CRM API</a></li>
+                <li><a href="#">Managed Website Services</a></li>
+                <li><a href="#">Data Migration</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-column">
+            <h3>Resources</h3>
+            <ul>
+                <li><a href="#">Recruitment Quiz</a></li>
+                <li><a href="#">A-Z Toolkit for Recruiters</a></li>
+                <li><a href="#">Our Customers</a></li>
+                <li><a href="#">Subscribe to Newsletter</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-column">
+            <h3>Legal</h3>
+            <ul>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Data Processing Agreement</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-column">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+        
+        <hr>
+        <div class="copyright" id="dynamic-year">
+            &copy; 2021 Recruit CRM. All rights reserved. Designed by <a href="#">Igwe Goodness .C</a>
+        </div>
+        
+    </footer> 
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -7,7 +7,7 @@ A modern landing page built with **HTML, CSS, and JavaScript** featuring:
 - Responsive design with hero, features, video, and footer sections
 
 ## 🚀 Live Demo
-🔗 [View Project](goodnessigwe.github.io/crm-features/)  
+🔗 [View Project](https://goodnessigwe.github.io/crm-features/)  
 
 
 ## 🚀 Features

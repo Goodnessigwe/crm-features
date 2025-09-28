@@ -22,7 +22,6 @@
     justify-content: space-between;
     padding: 15px 50px;
     position: relative;
-    top: 0;
     background: white;
     z-index: 1001;
 }
@@ -36,30 +35,17 @@
     list-style: none;
 }
 
-/* .nav-links li {
-    position: relative;
-    margin: 0 15px;
-} */
-
-/* .nav-links a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    padding: 10px;
-    display: block;
-} */
 nav li a {
-        font-size: 1rem;
-        font-weight: 500;
-        color: #162b5b;
-        padding: 0px 15px 0px 15px;
-        text-decoration: none;
-        transition: all .4s ease;
-         text-transform: none;
-        letter-spacing: normal;
-    }
+    font-size: 1rem;
+    font-weight: 500;
+    color: #162b5b;
+    padding: 0px 15px;
+    text-decoration: none;
+    transition: all .4s ease;
+}
 
-.btn-signin{
+/* Buttons */
+.btn-signin {
     color: #1070ca;
     background-color: #fff;
     border: 1px solid #1070ca;
@@ -69,7 +55,7 @@ nav li a {
     font-weight: 600;
     margin: 0 5px;
 }
-.btn-try{
+.btn-try {
     background-color: #1070ca;
     color: #fff;
     border: 1px solid #1070ca;
@@ -80,81 +66,98 @@ nav li a {
     margin: 0 5px;
 }
 .lang-select {
-    vertical-align: top ;
+    vertical-align: top;
 }
 
-/* Dropdown Styling */
+/* ✅ Dropdown Styling (cleaned & fixed) */
+.dropdown-product,
+.dropdown-menu {
+    display: none; /* hidden by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+/* Show dropdowns only when hovering */
 .dropdown:hover .dropdown-product,
 .dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-.dropdown-product {
-    position: absolute;
-    top: 100%;
-    left: 20%;
-    background: white;
-    border: 1px solid #ccc;
-    display: none;
-    z-index: 1002;
-    min-width: 1000px; 
-    /* max-width: 100%; */
-    padding: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-.dropdown-menu {
-    position: absolute;
-    top: 100%;
-    right: 2%;
-    background: white;
-    border: 1px solid #ccc;
-    display: none;
-    z-index: 1002;
-    min-width: 1000px; 
-    /* max-width: 90%; */
-    padding: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-
-.dropdown-product {
     display: flex;
     gap: 20px;
-    padding: 15px;
-    max-width: 600px;
 }
 
-.product-column {
+/* Product dropdown layout */
+.dropdown-product {
+    min-width: 800px;
+    max-width: 90%;
+}
+
+.dropdown-product .product-column {
     flex: 1;
     padding: 10px;
 }
 
-.dropdown-menu ul {
+/* Resources dropdown layout */
+.dropdown-menu {
+    min-width: 1000px;
+    max-width: 95%;
+}
+
+.dropdown-menu .column {
+    flex: 1;
+    padding: 10px;
+}
+
+/* List reset inside dropdowns */
+.dropdown-menu ul,
+.dropdown-product ul {
     list-style: none;
+    margin: 0;
     padding: 0;
 }
 
-.dropdown-menu li {
-    padding: 10px;
+.dropdown-menu li,
+.dropdown-product li {
+    margin-bottom: 8px;
 }
-/* a{
-     font-size: 1rem;
-     font-weight: 500;
+
+.dropdown-menu a,
+.dropdown-product a {
+    text-decoration: none;
     color: #162b5b;
-     padding: .8rem 1rem;
-     border-radius: .5rem;
-     border: none;
-} */
+}
 
+.dropdown-menu a:hover,
+.dropdown-product a:hover {
+    text-decoration: underline;
+}
 
-/* Language Dropdown */
+/* ✅ Language Dropdown (independent from big menus) */
 .language-dropdown {
     position: relative;
     cursor: pointer;
 }
 
-.language-dropdown:hover .dropdown-menu {
-    display: block;
+.language-dropdown .lang-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    border: 1px solid #ccc;
+    min-width: 150px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 1002;
+    flex-direction: column;
+}
+
+.language-dropdown:hover .lang-menu {
+    display: flex;
 }
 
 /* Countdown Styling */
@@ -194,7 +197,7 @@ nav li a {
     color: white;
     font-weight: bold;
     text-align: center;
-    position: sticky; 
+    position: sticky;
     top: 0;
     width: 100%;
     z-index: 1000;
@@ -210,8 +213,7 @@ nav li a {
     font-size: .8rem;
     font-weight: 600;
     line-height: 15px;
-    border-radius: 4px 4px 4px 4px;
-    padding: 10px 15px 10px 15px;
+    border-radius: 4px;
 }
 
 /* Hero Section */
@@ -231,23 +233,6 @@ nav li a {
 .hero-image img {
     width: 150px;
 }
-
-/* Fixed Button */
-/* .fixed-btn {
-    position: fixed;
-    bottom: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-} */
-/* 
-.fixed-btn button {
-    padding: 10px 20px;
-    background: green;
-    color: white;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-}  */
 
 /* Popular Features Section */
 .popular-features {
@@ -274,7 +259,7 @@ nav li a {
 }
 
 /* Features Section */
-.features{
+.features {
     width: 100%;
     background: #f8f9fa;
     padding: 60px 0;
@@ -331,8 +316,7 @@ nav li a {
     color: #555;
 }
 
-
-/*Video Section*/
+/* Video Section */
 .video-section {
     background: #f5f5f5;
     padding: 40px 0;
@@ -342,7 +326,7 @@ nav li a {
     justify-content: center;
     align-items: center;
 }
-.Video-section-header{
+.Video-section-header {
     margin-bottom: 10px;
 }
 
@@ -418,19 +402,15 @@ nav li a {
     bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
-    background: #4bc09f;;
+    background: #4bc09f;
     color: white;
     padding: 10px 20px 8px 20px;
     border-radius: 15px 15px 2px 2px;
     cursor: pointer;
-    font-weight: bold ;
-    /* padding: 15px 30px; */
+    font-weight: bold;
     text-decoration: none;
     font-size: 17px;
-    text-transform: none;
-    font-size: 17px;
     line-height: 1.5;
-    /* border-radius: 5px; */
     display: inline-block;
     transition: opacity 0.3s ease-in-out;
 }
@@ -440,13 +420,9 @@ nav li a {
     pointer-events: none;
 }
 
-
-
 /* Footer Section */
 .footer {
-    /* background: #162b5b; */
     background: #004080;
-
     color: white;
     padding: 40px 50px;
     display: flex;
@@ -509,6 +485,7 @@ nav li a {
     color: white;
     padding-left: 8px;
 }
+
 /* Dynamic Copyright */
 .footer .copyright {
     text-align: center;
@@ -517,10 +494,11 @@ nav li a {
     font-size: 14px;
     color: #ccc;
 }
+
 footer hr {
     width: 100%;
-    height: 1px; /* Ensures it's a thin horizontal line */
-    background-color: #ccc; /* Light gray color */
+    height: 1px;
+    background-color: #ccc;
     border: none;
-    margin: 20px 0; /* Adds spacing above and below */
+    margin: 20px 0;
 }

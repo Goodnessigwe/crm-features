@@ -61,17 +61,3 @@ document.addEventListener("scroll", function () {
 });
 
 
-// document.addEventListener("scroll", function() {
-//     const videoSection = document.querySelector(".video-section");
-//     const demoButton = document.querySelector(".floating-demo-btn");
-//     const demoSection = document.querySelector(".demo-section");
-//     const videoSectionTop = videoSection.offsetTop;
-//     const demoSectionTop = demoSection.offsetTop;
-//     const scrollY = window.scrollY;
-    
-//     if (scrollY >= videoSectionTop - 200 && scrollY < demoSectionTop - 200) {
-//         demoButton.classList.add("hidden");
-//     } else {
-//         demoButton.classList.remove("hidden");
-//     }
-// });
